@@ -50,7 +50,7 @@ The login flow was selected as the starting point since it is the entry point of
 ![Test Strategy](docs/mind-map.svg)
 
 ---
-📈 Future Improvements
+## 📈 Future Improvements
 
 Add cart and checkout test flows
 Implement Page Object Model (POM)
@@ -75,11 +75,5 @@ tests/
     login.spec.ts
 
 ---
-
-💡 Notes
-
-Tests use data-test selectors for better stability
-beforeEach is used to handle common setup steps
-Scenarios are designed using basic testing techniques such as equivalence partitioning and negative testing
 
 
