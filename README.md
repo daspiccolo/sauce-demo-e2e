@@ -47,9 +47,15 @@ The login flow was selected as the starting point since it is the entry point of
 
 ## 🗺️ Test Strategy Map
 
-![SauceDemo E2E Testing Strategy](docs\mind-map.svg)
+![Test Strategy](docs/mind-map.svg)
 
 ---
+📈 Future Improvements
+
+Add cart and checkout test flows
+Implement Page Object Model (POM)
+Add test data management
+Integrate CI (GitHub Actions)
 
 ## ⚙️ How to Run
 
@@ -60,7 +66,6 @@ npm install
 
 Run all tests:
 
-```bash
 npx playwright test
 
 📂 Project Structure
@@ -69,6 +74,7 @@ tests/
   auth/
     login.spec.ts
 
+---
 
 💡 Notes
 
@@ -77,9 +83,3 @@ beforeEach is used to handle common setup steps
 Scenarios are designed using basic testing techniques such as equivalence partitioning and negative testing
 
 
-📈 Future Improvements
-
-Add cart and checkout test flows
-Implement Page Object Model (POM)
-Add test data management
-Integrate CI (GitHub Actions)
