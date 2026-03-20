@@ -1,0 +1,152 @@
+<svg width="900" height="780" viewBox="0 0 900 780" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
+
+  <!-- Background -->
+  <rect width="900" height="780" fill="#ffffff" rx="12"/>
+
+  <!-- Legend -->
+  <rect x="30" y="16" width="14" height="14" rx="3" fill="#E24B4A"/>
+  <text x="50" y="27" font-size="12" fill="#444">P1 — critical</text>
+  <rect x="160" y="16" width="14" height="14" rx="3" fill="#BA7517"/>
+  <text x="180" y="27" font-size="12" fill="#444">P2 — important</text>
+  <rect x="310" y="16" width="14" height="14" rx="3" fill="#0F6E56"/>
+  <text x="330" y="27" font-size="12" fill="#444">P3 — complementary</text>
+
+  <!-- CENTER -->
+  <rect x="310" y="44" width="280" height="44" rx="10" fill="#7F77DD" stroke="#534AB7" stroke-width="1"/>
+  <text x="450" y="71" text-anchor="middle" font-size="14" font-weight="bold" fill="white">SauceDemo E2E Testing</text>
+
+  <!-- ── LOGIN ── -->
+  <line x1="360" y1="88" x2="120" y2="148" stroke="#aaa" stroke-width="1.2"/>
+  <rect x="30" y="148" width="180" height="36" rx="8" fill="#E24B4A" stroke="#A32D2D" stroke-width="1"/>
+  <text x="120" y="171" text-anchor="middle" font-size="13" font-weight="bold" fill="white">Login</text>
+
+  <line x1="90" y1="184" x2="60" y2="206" stroke="#ddd" stroke-width="0.8"/>
+  <rect x="30" y="206" width="160" height="26" rx="6" fill="#FCEBEB" stroke="#E24B4A" stroke-width="0.8"/>
+  <text x="110" y="223" text-anchor="middle" font-size="11" fill="#A32D2D">✓ Valid login · P1</text>
+
+  <line x1="90" y1="184" x2="60" y2="240" stroke="#ddd" stroke-width="0.8"/>
+  <rect x="30" y="240" width="160" height="26" rx="6" fill="#FCEBEB" stroke="#E24B4A" stroke-width="0.8"/>
+  <text x="110" y="257" text-anchor="middle" font-size="11" fill="#A32D2D">✓ Invalid login · P1</text>
+
+  <line x1="90" y1="184" x2="60" y2="274" stroke="#ddd" stroke-width="0.8"/>
+  <rect x="30" y="274" width="160" height="26" rx="6" fill="#FAEEDA" stroke="#BA7517" stroke-width="0.8"/>
+  <text x="110" y="291" text-anchor="middle" font-size="11" fill="#854F0B">○ Empty username · P2</text>
+
+  <line x1="90" y1="184" x2="60" y2="308" stroke="#ddd" stroke-width="0.8"/>
+  <rect x="30" y="308" width="160" height="26" rx="6" fill="#FAEEDA" stroke="#BA7517" stroke-width="0.8"/>
+  <text x="110" y="325" text-anchor="middle" font-size="11" fill="#854F0B">○ Empty password · P2</text>
+
+  <line x1="90" y1="184" x2="60" y2="342" stroke="#ddd" stroke-width="0.8"/>
+  <rect x="30" y="342" width="160" height="26" rx="6" fill="#FAEEDA" stroke="#BA7517" stroke-width="0.8"/>
+  <text x="110" y="359" text-anchor="middle" font-size="11" fill="#854F0B">○ Error message · P2</text>
+
+  <!-- ── INVENTORY ── -->
+  <line x1="400" y1="88" x2="290" y2="148" stroke="#aaa" stroke-width="1.2"/>
+  <rect x="210" y="148" width="180" height="36" rx="8" fill="#E24B4A" stroke="#A32D2D" stroke-width="1"/>
+  <text x="300" y="171" text-anchor="middle" font-size="13" font-weight="bold" fill="white">Inventory</text>
+
+  <line x1="265" y1="184" x2="230" y2="206" stroke="#ddd" stroke-width="0.8"/>
+  <rect x="200" y="206" width="160" height="26" rx="6" fill="#FCEBEB" stroke="#E24B4A" stroke-width="0.8"/>
+  <text x="280" y="223" text-anchor="middle" font-size="11" fill="#A32D2D">✓ Product list loads · P1</text>
+
+  <line x1="265" y1="184" x2="230" y2="240" stroke="#ddd" stroke-width="0.8"/>
+  <rect x="200" y="240" width="160" height="26" rx="6" fill="#FCEBEB" stroke="#E24B4A" stroke-width="0.8"/>
+  <text x="280" y="257" text-anchor="middle" font-size="11" fill="#A32D2D">✓ Add to cart · P1</text>
+
+  <line x1="265" y1="184" x2="230" y2="274" stroke="#ddd" stroke-width="0.8"/>
+  <rect x="200" y="274" width="160" height="26" rx="6" fill="#FAEEDA" stroke="#BA7517" stroke-width="0.8"/>
+  <text x="280" y="291" text-anchor="middle" font-size="11" fill="#854F0B">○ Remove from inventory · P2</text>
+
+  <line x1="265" y1="184" x2="230" y2="308" stroke="#ddd" stroke-width="0.8"/>
+  <rect x="200" y="308" width="160" height="26" rx="6" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.8"/>
+  <text x="280" y="325" text-anchor="middle" font-size="11" fill="#085041">△ Sort A-Z · P3</text>
+
+  <line x1="265" y1="184" x2="230" y2="342" stroke="#ddd" stroke-width="0.8"/>
+  <rect x="200" y="342" width="160" height="26" rx="6" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.8"/>
+  <text x="280" y="359" text-anchor="middle" font-size="11" fill="#085041">△ Sort Z-A · P3</text>
+
+  <!-- ── CART ── -->
+  <line x1="500" y1="88" x2="610" y2="148" stroke="#aaa" stroke-width="1.2"/>
+  <rect x="510" y="148" width="180" height="36" rx="8" fill="#E24B4A" stroke="#A32D2D" stroke-width="1"/>
+  <text x="600" y="171" text-anchor="middle" font-size="13" font-weight="bold" fill="white">Cart</text>
+
+  <line x1="565" y1="184" x2="530" y2="206" stroke="#ddd" stroke-width="0.8"/>
+  <rect x="510" y="206" width="170" height="26" rx="6" fill="#FCEBEB" stroke="#E24B4A" stroke-width="0.8"/>
+  <text x="595" y="223" text-anchor="middle" font-size="11" fill="#A32D2D">✓ Product in cart · P1</text>
+
+  <line x1="565" y1="184" x2="530" y2="240" stroke="#ddd" stroke-width="0.8"/>
+  <rect x="510" y="240" width="170" height="26" rx="6" fill="#FCEBEB" stroke="#E24B4A" stroke-width="0.8"/>
+  <text x="595" y="257" text-anchor="middle" font-size="11" fill="#A32D2D">✓ Open cart · P1</text>
+
+  <line x1="565" y1="184" x2="530" y2="274" stroke="#ddd" stroke-width="0.8"/>
+  <rect x="510" y="274" width="170" height="26" rx="6" fill="#FAEEDA" stroke="#BA7517" stroke-width="0.8"/>
+  <text x="595" y="291" text-anchor="middle" font-size="11" fill="#854F0B">○ Remove from cart · P2</text>
+
+  <line x1="565" y1="184" x2="530" y2="308" stroke="#ddd" stroke-width="0.8"/>
+  <rect x="510" y="308" width="170" height="26" rx="6" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.8"/>
+  <text x="595" y="325" text-anchor="middle" font-size="11" fill="#085041">△ Cart state after removal · P3</text>
+
+  <!-- ── CHECKOUT ── -->
+  <line x1="540" y1="88" x2="760" y2="148" stroke="#aaa" stroke-width="1.2"/>
+  <rect x="690" y="148" width="180" height="36" rx="8" fill="#E24B4A" stroke="#A32D2D" stroke-width="1"/>
+  <text x="780" y="171" text-anchor="middle" font-size="13" font-weight="bold" fill="white">Checkout</text>
+
+  <line x1="745" y1="184" x2="710" y2="206" stroke="#ddd" stroke-width="0.8"/>
+  <rect x="690" y="206" width="180" height="26" rx="6" fill="#FCEBEB" stroke="#E24B4A" stroke-width="0.8"/>
+  <text x="780" y="223" text-anchor="middle" font-size="11" fill="#A32D2D">✓ Fill information · P1</text>
+
+  <line x1="745" y1="184" x2="710" y2="240" stroke="#ddd" stroke-width="0.8"/>
+  <rect x="690" y="240" width="180" height="26" rx="6" fill="#FCEBEB" stroke="#E24B4A" stroke-width="0.8"/>
+  <text x="780" y="257" text-anchor="middle" font-size="11" fill="#A32D2D">✓ Finish checkout · P1</text>
+
+  <line x1="745" y1="184" x2="710" y2="274" stroke="#ddd" stroke-width="0.8"/>
+  <rect x="690" y="274" width="180" height="26" rx="6" fill="#FCEBEB" stroke="#E24B4A" stroke-width="0.8"/>
+  <text x="780" y="291" text-anchor="middle" font-size="11" fill="#A32D2D">✓ Confirmation page · P1</text>
+
+  <line x1="745" y1="184" x2="710" y2="308" stroke="#ddd" stroke-width="0.8"/>
+  <rect x="690" y="308" width="180" height="26" rx="6" fill="#FAEEDA" stroke="#BA7517" stroke-width="0.8"/>
+  <text x="780" y="325" text-anchor="middle" font-size="11" fill="#854F0B">○ Empty fields · P2</text>
+
+  <line x1="745" y1="184" x2="710" y2="342" stroke="#ddd" stroke-width="0.8"/>
+  <rect x="690" y="342" width="180" height="26" rx="6" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.8"/>
+  <text x="780" y="359" text-anchor="middle" font-size="11" fill="#085041">△ Continue to overview · P3</text>
+
+  <!-- ── CROSS-CUTTING ── -->
+  <line x1="450" y1="88" x2="450" y2="390" stroke="#aaa" stroke-width="1" stroke-dasharray="5 4"/>
+  <rect x="310" y="392" width="280" height="36" rx="8" fill="#888780" stroke="#5F5E5A" stroke-width="1"/>
+  <text x="450" y="415" text-anchor="middle" font-size="13" font-weight="bold" fill="white">Cross-cutting / UI</text>
+
+  <line x1="370" y1="428" x2="230" y2="452" stroke="#ddd" stroke-width="0.8"/>
+  <rect x="160" y="452" width="150" height="26" rx="6" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.8"/>
+  <text x="235" y="469" text-anchor="middle" font-size="11" fill="#085041">△ Button visibility · P3</text>
+
+  <line x1="400" y1="428" x2="330" y2="452" stroke="#ddd" stroke-width="0.8"/>
+  <rect x="310" y="452" width="150" height="26" rx="6" fill="#FAEEDA" stroke="#BA7517" stroke-width="0.8"/>
+  <text x="385" y="469" text-anchor="middle" font-size="11" fill="#854F0B">○ Error messages · P2</text>
+
+  <line x1="500" y1="428" x2="490" y2="452" stroke="#ddd" stroke-width="0.8"/>
+  <rect x="470" y="452" width="130" height="26" rx="6" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.8"/>
+  <text x="535" y="469" text-anchor="middle" font-size="11" fill="#085041">△ Navigation · P3</text>
+
+  <line x1="530" y1="428" x2="650" y2="452" stroke="#ddd" stroke-width="0.8"/>
+  <rect x="610" y="452" width="150" height="26" rx="6" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.8"/>
+  <text x="685" y="469" text-anchor="middle" font-size="11" fill="#085041">△ State transitions · P3</text>
+
+  <!-- E2E happy path -->
+  <rect x="30" y="504" width="840" height="50" rx="8" fill="#F1EFE8" stroke="#B4B2A9" stroke-width="1"/>
+  <text x="450" y="524" text-anchor="middle" font-size="12" font-weight="bold" fill="#444">Critical E2E Happy Path</text>
+  <text x="450" y="544" text-anchor="middle" font-size="12" fill="#666">Login → Inventory → Add to Cart → Checkout → Confirmation</text>
+
+  <!-- Priority explanation -->
+  <rect x="30" y="570" width="840" height="80" rx="8" fill="#F1EFE8" stroke="#B4B2A9" stroke-width="1"/>
+  <text x="450" y="592" text-anchor="middle" font-size="12" font-weight="bold" fill="#444">Risk-Based Testing — CTFL</text>
+  <rect x="50" y="604" width="12" height="12" rx="2" fill="#E24B4A"/>
+  <text x="70" y="614" font-size="11" fill="#444">P1 Critical — blocks business flow. No login or checkout = nothing works</text>
+  <rect x="50" y="622" width="12" height="12" rx="2" fill="#BA7517"/>
+  <text x="70" y="632" font-size="11" fill="#444">P2 Important — relevant but does not block the main flow</text>
+  <rect x="50" y="640" width="12" height="12" rx="2" fill="#0F6E56"/>
+  <text x="70" y="650" font-size="11" fill="#444">P3 Complementary — tests quality of the user experience</text>
+
+  <!-- Footer -->
+  <text x="450" y="720" text-anchor="middle" font-size="11" fill="#aaa">SauceDemo E2E Testing — Playwright + TypeScript</text>
+</svg>
