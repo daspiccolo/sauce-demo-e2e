@@ -52,10 +52,15 @@ The login flow was selected as the starting point since it is the entry point of
 ---
 ## 📈 Future Improvements
 
-- Add cart and checkout test flows
-- Implement Page Object Model (POM)
-- Add test data management
-- Integrate CI (GitHub Actions)
+### Short Term
+1. Add cart and checkout end-to-end flows  
+2. Implement Page Object Model (POM)  
+
+### Mid Term
+3. Introduce centralized test data management  
+
+### Long Term
+4. Integrate CI pipeline using GitHub Actions  
 
 ## ⚙️ How to Run
 
@@ -74,6 +79,5 @@ tests/
   auth/
     login.spec.ts
 
----
 
 
