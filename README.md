@@ -52,10 +52,10 @@ The login flow was selected as the starting point since it is the entry point of
 ---
 ## 📈 Future Improvements
 
-Add cart and checkout test flows
-Implement Page Object Model (POM)
-Add test data management
-Integrate CI (GitHub Actions)
+- Add cart and checkout test flows
+- Implement Page Object Model (POM)
+- Add test data management
+- Integrate CI (GitHub Actions)
 
 ## ⚙️ How to Run
 
