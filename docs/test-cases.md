@@ -4,7 +4,7 @@
 
 ## 🔐 Authentication
 
-### TC-001 - Successful login
+### TC-001 - Successful login ✅
 
 **Steps:**
 1. Enter valid username  
@@ -16,7 +16,7 @@
 
 ---
 
-### TC-002 - Invalid username
+### TC-002 - Invalid username ✅
 
 **Steps:**
 1. Enter invalid username  
@@ -125,7 +125,7 @@
 
 ## 💳 Checkout
 
-### TC-011 - Complete checkout successfully
+### TC-011 - Complete checkout successfully ✅
 
 **Steps:**
 1. Login  
@@ -141,7 +141,7 @@
 
 ---
 
-### TC-012 - Checkout with missing first name
+### TC-012 - Checkout with missing first name ✅
 
 **Steps:**
 1. Login  
@@ -157,7 +157,7 @@
 
 ---
 
-### TC-013 - Checkout with missing last name
+### TC-013 - Checkout with missing last name ✅
 
 **Steps:**
 1. Login  
@@ -173,7 +173,7 @@
 
 ---
 
-### TC-014 - Checkout with missing postal code
+### TC-014 - Checkout with missing postal code ✅
 
 **Steps:**
 1. Login  
