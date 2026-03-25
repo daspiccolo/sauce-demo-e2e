@@ -64,14 +64,9 @@ Test scenarios were designed using fundamental QA techniques such as equivalence
 
 ## 📈 Future Improvements
 
-### Short Term
 1. Add negative checkout scenarios  
 2. Improve cart validations  
-
-### Mid Term
 3. Introduce dynamic test data generation  
-
-### Long Term
 4. Integrate CI pipeline using GitHub Actions  
 
 ## 🗺️ Test Strategy Map
