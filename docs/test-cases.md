@@ -54,7 +54,7 @@
 
 ## 🛒 Inventory
 
-### TC-005 - Inventory page loads correctly
+### TC-005 - Inventory page loads correctly ✅
 
 **Steps:**
 1. Login with valid credentials  
@@ -76,7 +76,7 @@
 
 ## 🛍️ Cart
 
-### TC-007 - Add product to cart
+### TC-007 - Add product to cart ✅
 
 **Steps:**
 1. Login  
@@ -87,7 +87,7 @@
 
 ---
 
-### TC-008 - Navigate to cart page
+### TC-008 - Navigate to cart page ✅
 
 **Steps:**
 1. Login  
@@ -98,7 +98,7 @@
 
 ---
 
-### TC-009 - Correct product displayed in cart
+### TC-009 - Correct product displayed in cart ✅
 
 **Steps:**
 1. Login  

@@ -11,8 +11,10 @@ test.describe('Login tests', () => {
   });
   test('should login successfully with valid credentials', async ({ page }) => {
     const loginPage = new LoginPage(page);
-    await loginPage.login(loginData.validCredentials.username,
-      loginData.validCredentials.password);
+    await loginPage.login(
+      loginData.validCredentials.username,
+      loginData.validCredentials.password
+    );
 
     const inventoryPage = new InventoryPage(page);
     await expect(inventoryPage.title).toHaveText('Products');
@@ -21,8 +23,10 @@ test.describe('Login tests', () => {
   test('should show an error message with invalid username', async ({ page }) => {
     const loginPage = new LoginPage(page);
 
-    await loginPage.login(loginData.invalidUsername.username,
-      loginData.invalidUsername.password);
+    await loginPage.login(
+      loginData.invalidUsername.username,
+      loginData.invalidUsername.password
+    );
 
     await expect(loginPage.errorMessage).toBeVisible();
     await expect(loginPage.errorMessage)
@@ -32,7 +36,8 @@ test.describe('Login tests', () => {
   test('should show an error message with invalid password', async ({ page }) => {
     const loginPage = new LoginPage(page);
 
-    await loginPage.login(loginData.invalidPassword.username,
+    await loginPage.login(
+      loginData.invalidPassword.username,
       loginData.invalidPassword.password);
 
     await expect(loginPage.errorMessage).toBeVisible();
@@ -42,8 +47,10 @@ test.describe('Login tests', () => {
   test('should show an error message with missing username', async ({ page }) => {
     const loginPage = new LoginPage(page);
 
-    await loginPage.login(loginData.missingUsername.username,
-      loginData.missingUsername.password);
+    await loginPage.login(
+      loginData.missingUsername.username,
+      loginData.missingUsername.password
+    );
 
     await expect(loginPage.errorMessage).toBeVisible();
     await expect(loginPage.errorMessage)
@@ -52,8 +59,10 @@ test.describe('Login tests', () => {
   test('should show an error message with missing password', async ({ page }) => {
     const loginPage = new LoginPage(page);
 
-    await loginPage.login(loginData.missingPassword.username,
-      loginData.missingPassword.password);
+    await loginPage.login(
+      loginData.missingPassword.username,
+      loginData.missingPassword.password
+    );
 
     await expect(loginPage.errorMessage).toBeVisible();
     await expect(loginPage.errorMessage)
