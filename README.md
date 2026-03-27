@@ -8,30 +8,49 @@ It demonstrates a structured QA approach, covering core user flows, positive and
 
 ## 🚀 Tech Stack
 
-- Playwright
-- TypeScript
-- Node.js
+- Playwright  
+- TypeScript  
+- Node.js  
+
+---
+
+## 🧪 Example Flow
+
+Login → Add Product → Cart → Checkout → Order Confirmation
 
 ---
 
 ## 📌 Test Coverage
 
-The test suite currently covers the main user journey:
+The test suite covers the main user journey, including positive and negative scenarios:
 
 ### 🔐 Authentication
 - Successful login with valid credentials  
-- Error handling with invalid credentials  
+- Error handling:
+  - Invalid username  
+  - Invalid password  
+  - Missing username  
+  - Missing password  
 
 ### 🛒 Inventory & Cart
-- Product visibility validation  
+- Product information visibility (name, price, image)  
+- Validate multiple products are displayed  
+- Validate total number of products  
+- Sort products by price (low → high)  
 - Add product to cart  
 - Navigate to cart page  
 - Validate correct product in cart  
+- Remove product from cart  
 
 ### 💳 Checkout
-- Fill checkout information  
 - Complete purchase flow  
-- Validate confirmation message  
+- Validation of required fields:
+  - Missing first name  
+  - Missing last name  
+  - Missing postal code  
+- Checkout overview validation  
+- Cancel checkout flow (returns to cart page)  
+- Validate order confirmation message  
 
 ---
 
@@ -44,34 +63,47 @@ Before implementing the tests, I analyzed the application and identified the mai
 - Cart  
 - Checkout  
 
-I prioritized the test scenarios based on:
+Test scenarios were prioritized based on:
 
 - Business impact  
 - User journey criticality  
 - Stability for automation  
 
-Test scenarios were designed using fundamental QA techniques such as equivalence partitioning and negative testing.
+Test design techniques used:
+
+- Equivalence Partitioning  
+- Negative Testing  
+- Boundary validation (required fields)  
 
 ---
+
 ## 💡 Notes
 
-- Tests use `data-test` selectors for better stability  
-- `beforeEach` is used to handle common setup steps  
+- Tests use `data-test` selectors when available for better stability  
 - Page Object Model (POM) is used to improve maintainability  
+- Reusable helpers are implemented for common user flows  
 - Test data is separated from test logic  
+- `beforeEach` is used to handle common setup steps  
+
+---
+
+## 🗺️ Test Strategy Map
+
+![Test Strategy](docs/mind-map.svg)
 
 ---
 
 ## 📈 Future Improvements
 
-1. Add negative checkout scenarios  
-2. Improve cart validations  
-3. Introduce dynamic test data generation  
-4. Integrate CI pipeline using GitHub Actions  
+### Short Term
+- Add more negative scenarios (edge cases)  
+- Improve validation of totals and pricing  
 
-## 🗺️ Test Strategy Map
+### Mid Term
+- Introduce dynamic test data generation  
 
-![Test Strategy](docs/mind-map.svg)
+### Long Term
+- Integrate CI pipeline using GitHub Actions  
 
 ---
 
@@ -82,15 +114,35 @@ Install dependencies:
 ```bash
 npm install
 
-Run all tests:
+npx playwright test
 
 npx playwright test
 
-📂 Project Structure
 
+```
+---
+## 📂 Project Structure
 tests/
   auth/
     login.spec.ts
+  inventory/
+    inventory.spec.ts
+  checkout/
+    checkout.spec.ts
 
+pages/
+  LoginPage.ts
+  InventoryPage.ts
+  CartPage.ts
+  CheckoutPage.ts
 
+utils/
+  flowHelpers.ts
 
+test-data/
+  loginData.ts
+  checkoutData.ts
+
+docs/
+  test-cases.md
+  mind-map.svg
