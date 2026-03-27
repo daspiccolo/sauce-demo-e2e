@@ -116,12 +116,11 @@ npm install
 
 npx playwright test
 
-npx playwright test
-
-
 ```
 ---
 ## 📂 Project Structure
+```bash
+
 tests/
   auth/
     login.spec.ts
