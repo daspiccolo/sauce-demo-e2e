@@ -110,7 +110,7 @@
 
 ---
 
-### TC-010 - Remove product from cart
+### TC-010 - Remove product from cart ✅
 
 **Steps:**
 1. Login  
