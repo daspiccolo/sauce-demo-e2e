@@ -28,7 +28,7 @@
 
 ---
 
-### TC-003 - Invalid password
+### TC-003 - Invalid password ✅
 
 **Steps:**
 1. Enter valid username  
@@ -40,7 +40,7 @@
 
 ---
 
-### TC-004 - Empty credentials
+### TC-004 - Empty credentials ✅
 
 **Steps:**
 1. Leave username empty  
