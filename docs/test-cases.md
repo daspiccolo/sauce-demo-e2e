@@ -64,7 +64,7 @@
 
 ---
 
-### TC-006 - Product information is visible
+### TC-006 - Product information is visible ✅
 
 **Steps:**
 1. Login  
@@ -189,7 +189,7 @@
 
 ---
 
-### TC-015 - Checkout overview page validation
+### TC-015 - Checkout overview page validation ✅
 
 **Steps:**
 1. Login  
@@ -206,7 +206,7 @@
 
 ---
 
-### TC-016 - Cancel checkout process
+### TC-016 - Cancel checkout process ✅
 
 **Steps:**
 1. Login  
@@ -216,4 +216,15 @@
 5. Click cancel  
 
 **Expected:**
-- User is redirected back to the inventory page  
+-  User is redirected back to the cart page
+---
+
+### TC-017 - Sort products by price (low to high) ✅
+
+**Steps:**
+1. Login with valid credentials  
+2. Open the sort dropdown  
+3. Select **Price (low to high)**  
+
+**Expected:**
+- Products are sorted in ascending order by price  

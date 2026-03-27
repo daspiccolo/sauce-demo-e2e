@@ -6,6 +6,11 @@ export class InventoryPage {
     readonly addBackpackButton: Locator;
     readonly cartLink: Locator;
     readonly productName: Locator;
+    readonly productPrice: Locator;
+    readonly productImage: Locator;
+    readonly sortDropdown: Locator;
+    readonly productPrices: Locator;
+    readonly inventoryItems: Locator;
 
     constructor(page: Page) {
         this.page = page;
@@ -13,6 +18,13 @@ export class InventoryPage {
         this.addBackpackButton = page.locator('[data-test="add-to-cart-sauce-labs-backpack"]');
         this.cartLink = page.locator('[data-test="shopping-cart-link"]');
         this.productName = page.locator('[data-test="inventory-item-name"]').first();
+        this.productPrice = page.locator('[data-test="inventory-item-price"]').first();
+        this.productImage = page.locator('.inventory_item_img img').first();
+       
+       
+        this.sortDropdown = page.locator('[data-test="product-sort-container"]');
+        this.productPrices = page.locator('[data-test="inventory-item-price"]');
+        this.inventoryItems = page.locator('.inventory_item');
     }
 
     async addBackpackToCart() {

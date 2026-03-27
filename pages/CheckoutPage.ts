@@ -9,6 +9,10 @@ export class CheckoutPage {
     readonly finishButton: Locator;
     readonly successMessage: Locator;
     readonly errorMessage: Locator;
+    readonly overviewTitle: Locator;
+    readonly overviewProductName: Locator;
+    readonly totalLabel: Locator;
+    readonly cancelButton: Locator;
 
     constructor(page: Page) {
         this.page = page;
@@ -19,6 +23,10 @@ export class CheckoutPage {
         this.finishButton = page.locator('[data-test="finish"]');
         this.successMessage = page.locator('[data-test="complete-header"]');
         this.errorMessage = page.locator('[data-test="error"]');
+        this.overviewTitle = page.locator('[data-test="title"]');
+        this.overviewProductName = page.locator('[data-test="inventory-item-name"]');
+        this.totalLabel = page.locator('[data-test="total-label"]');
+        this.cancelButton = page.locator('[data-test="cancel"]');
     }
     async fillCheckoutInformation(firstName: string, lastName: string, postalCode: string) {
         await this.firstNameInput.fill(firstName);
@@ -33,4 +41,7 @@ export class CheckoutPage {
     async finishCheckout() {
         await this.finishButton.click();
     }
+    async cancelCheckout() {
+        await this.cancelButton.click();
+    }   
 }

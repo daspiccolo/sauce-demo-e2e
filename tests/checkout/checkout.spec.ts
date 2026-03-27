@@ -80,4 +80,32 @@ test.describe('Checkout flow', () => {
         await expect(checkoutPage.errorMessage)
             .toHaveText('Error: Postal Code is required');
     });
+
+    test('should display correct checkout overview information', async ({ page }) => {
+        const checkoutPage = new CheckoutPage(page);
+        const user = checkoutData.validUser;
+
+        await navigateToCheckout(page);
+
+        await checkoutPage.fillCheckoutInformation(
+            user.firstName,
+            user.lastName,
+            user.postalCode
+        );
+
+        await checkoutPage.continueCheckout();
+
+        await expect(checkoutPage.overviewTitle).toHaveText('Checkout: Overview');
+        await expect(checkoutPage.overviewProductName).toHaveText('Sauce Labs Backpack');
+        await expect(checkoutPage.totalLabel).toContainText('$');
+    });
+    test('should cancel checkout process', async ({ page }) => {
+        const checkoutPage = new CheckoutPage(page);
+
+        await navigateToCheckout(page);
+
+        await checkoutPage.cancelCheckout();
+
+        await expect(page).toHaveURL(/cart.html/);
+    });
 });
